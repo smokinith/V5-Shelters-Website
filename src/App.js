@@ -6,6 +6,7 @@ import AboutPage from './pages/AboutPage';
 import WhyUsPage from './pages/WhyUsPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
+import DownloadPage from './pages/DownloadPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/why-us" element={<WhyUsPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/download" element={<DownloadPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
