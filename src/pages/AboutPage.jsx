@@ -3,7 +3,23 @@ import { MapPin, Target, Eye, Award } from 'lucide-react';
 import '../styles/AboutPage.css';
 
 const AboutPage = () => {
-
+  const teamMembers = [
+    {
+      name: 'Venkatswamy M',
+      role: 'Founder & CEO',
+      bio: 'With 15+ years in real estate, Vikram founded V5 Shelters to make quality housing accessible to middle-class families.'
+    },
+    {
+      name: 'Viraaj Nandan',
+      role: 'Co-Founder',
+      bio: 'An award-winning architect specializing in sustainable and modern residential designs that blend functionality with aesthetics.'
+    },
+    {
+      name: 'Vasudev Naidu',
+      role: 'Head of Operations',
+      bio: 'Ensures every project is delivered on time with the highest quality standards, overseeing construction and client relations.'
+    },
+  ];
 
   const milestones = [
     { year: '2020', event: 'V5 Shelters founded with a vision to transform affordable housing' },
