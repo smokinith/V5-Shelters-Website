@@ -5,9 +5,9 @@ import '../styles/AboutPage.css';
 const AboutPage = () => {
   const teamMembers = [
     {
-      name: 'Venkatswamy M',
+      name: 'M Venkatswamy',
       role: 'Founder & CEO',
-      bio: 'With 15+ years in real estate, Vikram founded V5 Shelters to make quality housing accessible to middle-class families.'
+      bio: 'With 15+ years in real estate, Dr. Venkatswamy founded V5 Shelters to make quality housing accessible to middle-class families.'
     },
     {
       name: 'Viraaj Nandan',
