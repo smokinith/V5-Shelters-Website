@@ -3,26 +3,7 @@ import { MapPin, Target, Eye, Award } from 'lucide-react';
 import '../styles/AboutPage.css';
 
 const AboutPage = () => {
-  const teamMembers = [
-    {
-      name: 'Vikram Reddy',
-      role: 'Founder & CEO',
-      image: 'https://images.unsplash.com/photo-1573164574511-73c773193279?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHByb2Zlc3Npb25hbHN8ZW58MHx8fHwxNzYyNDk2NjkzfDA&ixlib=rb-4.1.0&q=85',
-      bio: 'With 15+ years in real estate, Vikram founded V5 Shelters to make quality housing accessible to middle-class families.'
-    },
-    {
-      name: 'Ananya Krishnan',
-      role: 'Chief Architect',
-      image: 'https://images.unsplash.com/photo-1573164574572-cb89e39749b4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMHByb2Zlc3Npb25hbHN8ZW58MHx8fHwxNzYyNDk2NjkzfDA&ixlib=rb-4.1.0&q=85',
-      bio: 'An award-winning architect specializing in sustainable and modern residential designs that blend functionality with aesthetics.'
-    },
-    {
-      name: 'Suresh Kumar',
-      role: 'Head of Operations',
-      image: 'https://images.unsplash.com/photo-1614928001197-55f0724d4ce4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHw0fHxidXNpbmVzcyUyMHByb2Zlc3Npb25hbHN8ZW58MHx8fHwxNzYyNDk2NjkzfDA&ixlib=rb-4.1.0&q=85',
-      bio: 'Ensures every project is delivered on time with the highest quality standards, overseeing construction and client relations.'
-    },
-  ];
+
 
   const milestones = [
     { year: '2020', event: 'V5 Shelters founded with a vision to transform affordable housing' },
