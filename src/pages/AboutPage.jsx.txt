@@ -1,0 +1,149 @@
+import React from 'react';
+import { MapPin, Target, Eye, Award } from 'lucide-react';
+import '../styles/AboutPage.css';
+
+  const milestones = [
+    { year: '2020', event: 'V5 Shelters founded with a vision to transform affordable housing' },
+    { year: '2021', event: 'Launched first project - Anekal Greens with 50 villa units' },
+    { year: '2022', event: 'Expanded to Jigani and Attibele regions, 200+ families housed' },
+    { year: '2023', event: 'Received "Best Affordable Housing Developer" award' },
+    { year: '2024', event: 'Completed 500+ villa handovers, launched 3 new projects' },
+  ];
+
+  return (
+    <div className="about-page">
+      {/* Hero Section */}
+      <section className="about-hero">
+        <div className="about-hero-overlay"></div>
+        <div className="about-hero-content">
+          <h1 className="about-hero-title">Building Dreams, Creating Communities</h1>
+          <p className="about-hero-subtitle">
+            Your trusted partner in affordable, quality row villas across Bangalore
+          </p>
+        </div>
+      </section>
+
+      {/* Introduction */}
+      <section className="section">
+        <div className="container">
+          <div className="about-intro">
+            <h2 className="section-title">Who We Are</h2>
+            <p className="intro-text">
+              V5 Shelters is a Bangalore-based pioneer in crafting affordable, quality row villas that blend modern living with community spirit. Focused on the thriving Anekal region and surrounding areas, we're dedicated to making homeownership accessible to middle-class families without compromising on quality, design, or sustainability.
+            </p>
+            <p className="intro-text">
+              Our commitment goes beyond construction - we build vibrant communities where families can grow, connect, and create lasting memories. Every villa is a testament to our values: transparency, quality, and customer satisfaction.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision */}
+      <section className="mission-vision-section">
+        <div className="container">
+          <div className="mission-vision-grid">
+            <div className="mission-vision-card card">
+              <div className="icon-wrapper">
+                <Target size={40} />
+              </div>
+              <h3>Our Mission</h3>
+              <ul>
+                <li>Deliver affordable row villas without compromising quality</li>
+                <li>Create sustainable, eco-friendly living spaces</li>
+                <li>Maintain transparent and ethical business practices</li>
+                <li>Build lasting relationships with our customers</li>
+              </ul>
+            </div>
+            <div className="mission-vision-card card">
+              <div className="icon-wrapper">
+                <Eye size={40} />
+              </div>
+              <h3>Our Vision</h3>
+              <ul>
+                <li>Be the most trusted affordable housing brand in Bangalore</li>
+                <li>Expand to serve 10,000+ families by 2030</li>
+                <li>Pioneer sustainable construction practices</li>
+                <li>Set new standards in customer experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="section team-section">
+        <div className="container">
+          <h2 className="section-title">Meet Our Team</h2>
+          <p className="section-subtitle">
+            Experienced professionals committed to turning your housing dreams into reality
+          </p>
+          <div className="team-grid">
+            {teamMembers.map((member, index) => (
+              <div key={index} className="team-card card">
+                <div className="team-image">
+                  <img src={member.image} alt={member.name} />
+                </div>
+                <div className="team-content">
+                  <h3 className="team-name">{member.name}</h3>
+                  <p className="team-role">{member.role}</p>
+                  <p className="team-bio">{member.bio}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline */}
+      <section className="timeline-section">
+        <div className="container">
+          <h2 className="section-title">Our Journey</h2>
+          <p className="section-subtitle">
+            Milestones that define our growth and commitment to excellence
+          </p>
+          <div className="timeline">
+            {milestones.map((milestone, index) => (
+              <div key={index} className="timeline-item">
+                <div className="timeline-marker"></div>
+                <div className="timeline-content">
+                  <div className="timeline-year">{milestone.year}</div>
+                  <p className="timeline-event">{milestone.event}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="map-section">
+        <div className="container">
+          <h2 className="section-title">Visit Our Office</h2>
+          <div className="map-container">
+            <iframe
+              title="V5 Shelters Office Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.4726743745974!2d77.6385799!3d12.8934515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDUzJzM2LjQiTiA3N8KwMzgnMTguOSJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style={{ border: 0, borderRadius: '12px' }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div className="map-info">
+              <div className="map-info-icon">
+                <MapPin size={24} />
+              </div>
+              <div>
+                <h4>V5 Shelters</h4>
+                <p>#501, Terrace Floor, Shiv Kailash Apartment, 9th Main Road, Near Shiv Kutir Apartments, CM Layout, HSR Layout Extension, Yellukunte, Bengaluru 560068</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default AboutPage;
